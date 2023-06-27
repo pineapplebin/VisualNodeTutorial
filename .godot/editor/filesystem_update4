@@ -1,0 +1,5 @@
+res://scenes/control.tscn
+res://scenes/main.tscn
+res://scenes/main.gd
+res://scenes/simple_graph_node.tscn
+res://scenes/simple_graph_node.gd

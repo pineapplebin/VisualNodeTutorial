@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://c56gpuyy2gfdx"]
+
+[ext_resource type="Script" path="res://scenes/simple_graph_node.gd" id="1_lm58o"]
+
+[node name="SimpleGraphNode" type="GraphNode"]
+offset_right = 250.0
+offset_bottom = 150.0
+title = "Simple Node"
+show_close = true
+resizable = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+script = ExtResource("1_lm58o")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="close_request" from="." to="." method="_on_close_request"]
+[connection signal="resize_request" from="." to="." method="_on_resize_request"]
